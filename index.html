@@ -2,6 +2,7 @@
 layout: page
 description: "Thinking will not overcome fear but action will."
 ---
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -23,6 +24,7 @@ description: "Thinking will not overcome fear but action will."
 </div>
 <hr>
 {% endfor %}
+
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
